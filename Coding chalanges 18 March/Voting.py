@@ -1,0 +1,7 @@
+#taing age input
+age = int(input("Enter age: "))
+#checing eigibiity
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
