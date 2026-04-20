@@ -1,0 +1,18 @@
+import numpy as np
+
+nums = [12, 15, 20, 7, 18]
+
+even_factors = []
+
+for n in nums:
+    factors = []
+
+    for i in range(1, n + 1):
+        if n % i == 0 and i % 2 == 0:
+            factors.append(i)
+
+    even_factors.append(factors)
+
+arr = np.array(even_factors, dtype=object)
+
+print(arr)
